@@ -15,10 +15,10 @@ const getInput = () => {
   return book;
 };
 
-const removeBook = (title) => {
-  const book = document.getElementById(title);
+const removeBook = (id) => {
+  const book = document.getElementById(id);
   book.remove();
-  library = library.filter((bookObj) => bookObj.title !== title);
+  library = library.filter((bookObj) => bookObj.id !== id);
   localStorage.setItem('library', JSON.stringify(library));
 };
 
@@ -39,6 +39,8 @@ const addBook = (bookObj) => {
   book.appendChild(authorElement);
   book.appendChild(deleteBtn);
   bookList.appendChild(book);
+  document.getElementById('bookTitle').value = '';
+  document.getElementById('bookAuthor').value = '';
 };
 
 const addButton = document.getElementById('add-btn');
