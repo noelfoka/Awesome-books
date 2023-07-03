@@ -57,7 +57,7 @@ addButton.addEventListener('click', () => {
 
 window.onload = () => {
   library = JSON.parse(localStorage.getItem('library')) || [];
-  
+
   library.forEach((book) => {
     addBook(book);
   });
