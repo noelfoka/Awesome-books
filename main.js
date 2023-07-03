@@ -26,10 +26,17 @@ const addBook = (bookObj) => {
   const bookList = document.getElementById('book-list');
   const book = document.createElement('LI');
   book.setAttribute('id', bookObj.title);
-  book.innerHTML = `<h3>${bookObj.title}</h3><p>${bookObj.author}</p>`;
+  const titleElement = document.createElement('h3');
+  titleElement.style.margin = '0'; // Remove margin
+  titleElement.textContent = bookObj.title;
+  const authorElement = document.createElement('p');
+  authorElement.style.margin = '0'; // Remove margin
+  authorElement.textContent = bookObj.author;
   const deleteBtn = document.createElement('button');
   deleteBtn.innerHTML = 'Remove';
   deleteBtn.addEventListener('click', () => removeBook(bookObj.title));
+  book.appendChild(titleElement);
+  book.appendChild(authorElement);
   book.appendChild(deleteBtn);
   bookList.appendChild(book);
 };
