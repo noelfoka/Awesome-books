@@ -1,9 +1,4 @@
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
+import Book from './book.js';
 
 class Library {
   constructor() {
@@ -56,14 +51,14 @@ class Library {
     bookElement.setAttribute('id', book.title);
 
     const contentDiv = document.createElement('div');
-    contentDiv.classList.add('book-content')
+    contentDiv.classList.add('book-content');
     contentDiv.style.width = '60%';
 
     const titleElement = document.createElement('p');
     titleElement.style.margin = '0';
     titleElement.style.marginLeft = '10px';
     titleElement.innerHTML = `"${book.title}" <span class='by' style='margin-right: 5px;'>by</span>`;
-    
+
     const authorElement = document.createElement('p');
     authorElement.style.margin = '0';
     authorElement.textContent = book.author;
