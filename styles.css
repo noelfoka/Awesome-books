@@ -1,5 +1,9 @@
 body {
-  height: 100%;
+  height: 98vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 li {
@@ -11,6 +15,10 @@ li {
 #book-list {
   margin: 0;
   padding: 0;
+  width: 70%;
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 #form {
