@@ -41,7 +41,7 @@ class Library {
     const bookElement = document.createElement('li');
     bookElement.setAttribute('id', book.title);
 
-    // function to work on the background colours
+    // function to work on the background colors
     if (this.books.indexOf(book) % 2 === 0) {
       bookElement.classList.add('background1');
     } else {
