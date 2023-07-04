@@ -45,18 +45,40 @@ class Library {
   renderBook(book) {
     const bookElement = document.createElement("li");
     bookElement.setAttribute("id", book.title);
-    const titleElement = document.createElement("h3");
+    
+    // function to work on the background colours
+    if (this.books.indexOf(book) % 2 === 0) {
+      bookElement.classList.add("background1");
+    } else {
+      bookElement.classList.add("background2");
+    }
+    
+    bookElement.setAttribute("id", book.title);
+    
+    const contentDiv = document.createElement("div");
+    contentDiv.classList.add("book-content")
+    contentDiv.style.width = "60%";
+    
+    const titleElement = document.createElement("p");
     titleElement.style.margin = "0";
-    titleElement.textContent = book.title;
+    titleElement.style.marginLeft = "10px";
+    titleElement.innerHTML = `"${book.title}" <span class="by" style="margin-right: 5px;">by</span>`;
+    
     const authorElement = document.createElement("p");
     authorElement.style.margin = "0";
     authorElement.textContent = book.author;
+    
     const deleteBtn = document.createElement("button");
     deleteBtn.innerHTML = "Remove";
+    deleteBtn.classList.add("remove-button");
     deleteBtn.addEventListener("click", () => this.removeBook(book));
-    bookElement.appendChild(titleElement);
-    bookElement.appendChild(authorElement);
+    
+    contentDiv.appendChild(titleElement);
+    contentDiv.appendChild(authorElement);
+    
+    bookElement.appendChild(contentDiv);
     bookElement.appendChild(deleteBtn);
+    
     this.bookList.appendChild(bookElement);
   }
 
