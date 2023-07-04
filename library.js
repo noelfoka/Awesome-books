@@ -85,4 +85,4 @@ class Library {
   }
 }
 
-new Library();
+export default Library;
