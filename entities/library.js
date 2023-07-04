@@ -1,11 +1,4 @@
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
-
-class Library {
+export default class Library {
   constructor() {
     this.books = JSON.parse(localStorage.getItem("library")) || [];
     this.bookList = document.getElementById("book-list");
@@ -67,5 +60,3 @@ class Library {
     });
   }
 }
-
-new Library();

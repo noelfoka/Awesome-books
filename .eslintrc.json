@@ -21,5 +21,11 @@
   "ignorePatterns": [
     "dist/",
     "build/"
-  ]
+  ],
+  {
+    "max-classes-per-file": [
+        "error",
+        { "ignoreExpressions": true, "max": 2 }
+    ]
+}
 }
