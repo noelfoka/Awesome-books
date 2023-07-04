@@ -75,6 +75,7 @@ li {
   border: 3px solid black;
   border-radius: 3px;
   padding: 3px;
+  width: 200px;
 }
 
 .btn {
