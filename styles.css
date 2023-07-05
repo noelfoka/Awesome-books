@@ -15,14 +15,15 @@ li {
   list-style: none;
 }
 
-/*.form,
+.form,
 .contact {
-  display: none;
-}*/
+  display: block;
+}
 
 a {
   color: inherit;
   text-decoration: none;
+  width: 100px;
 }
 
 .header,
@@ -57,8 +58,14 @@ a {
   margin: 0 auto 20px auto;
 }
 
+@media screen and (min-width: 786px) {
+  .contact {
+    width: 40%;
+  }
+}
+
 .header1 {
-  font-size: 18px;
+  font-size: 36px;
   text-align: center;
 }
 
@@ -72,6 +79,41 @@ li {
   justify-content: space-between;
 }
 
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.input-form button {
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 786px) {
+  .input-form {
+    width: 40%;
+  }
+
+  .input-form button {
+    align-self: flex-end;
+    min-width: 10%;
+  }
+}
+
+.list {
+  border: 3px solid #000;
+  border-radius: 8px;
+  margin: 0 auto 20px auto;
+}
+
+@media screen and (min-width: 786px) {
+  .list {
+    width: 40%;
+  }
+}
+
 .book-content {
   display: flex;
   font-size: 14px;
@@ -79,9 +121,8 @@ li {
 
 #book-list {
   padding-left: 0;
-  border: 3px solid;
   border-radius: 3px;
-  width: 300px;
+  width: 100%;
 }
 
 #form {
@@ -123,10 +164,12 @@ li {
 }
 
 .input.form {
-  border: 3px solid black;
-  border-radius: 3px;
-  padding: 3px;
-  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  width: 98%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .btn {
@@ -136,8 +179,13 @@ li {
 }
 
 .input.btn {
-  border: 3px solid black;
-  border-radius: 3px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 .background1 {
@@ -153,6 +201,7 @@ li {
   display: none !important;
 }
 
-#list {
+/*#list {
   width: 90%;
 }
+*/
