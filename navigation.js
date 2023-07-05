@@ -1,13 +1,20 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-use-before-define */
 // eslint-disable-next-line no-unused-vars
-function displaySection(section) {
-  const sectionList = document.getElementById('list');
-  const sectionForm = document.getElementById('form');
-  const sectionContact = document.getElementById('contact');
-  const heading = document.getElementById('title');
-  const date = document.getElementById('date');
-  date.textContent = setDate();
+function displaySection(sectionId) {
+  const sections = ['list', 'form', 'contact'];
+
+  for (const section of sections) {
+    const element = document.getElementById(section);
+    if (element) {
+      if (section === sectionId) {
+        element.classList.remove('hidden');
+      } else {
+        element.classList.add('hidden');
+      }
+    }
+  }
+}
 
   // console.log(sectionList, sectionForm, sectionContact);
 
