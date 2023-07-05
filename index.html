@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="header">
-        <h2 class="header-title">Awesome Books</h2>
+        <h2 id="title" class="header-title">Awesome Books</h2>
         <nav>
           <ul class="nav-list">
             <li><a href="#" id="navList" onclick="displaySection('list')">List</a></li>
@@ -31,7 +31,7 @@
         <ul id="book-list"></ul>
       </div>
 
-      <div id="form">
+      <div id="form" class="hidden">
         <div class="spandiv">
           <span class="form-line"></span>
         </div>
@@ -46,9 +46,26 @@
           </div>
         </form>
       </div>
+
+      <div id="contact" class="contact">
+        <p>
+          If you have any questions or you just want to say "Hello".
+          You can reach us to.
+        </p>
+        <ul>
+          <li>Our email: <a href="#">mail@mail.com</a></li>
+          <li>Our twitter: <a href="#">@awesomeBooks</a></li>
+          <li>Our github: <a href="#">@awesomeBooks</a></li>
+        </ul>
+      </div>
     </main>
+
+    <footer class="footer">
+      <h3>Copyright &copy;</h3>
+    </footer>
     <script type="module" src="./book.js"></script>
     <script type="module" src="./library.js"></script>
+    <script src="navigation.js"></script>
     <script type="module">
     import Library from './library.js';
     const library = new Library();
