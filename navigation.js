@@ -11,7 +11,7 @@ function displaySection(section) {
 
   // console.log(sectionList, sectionForm, sectionContact);
 
-  switch (section) {
+  /*switch (section) {
     case 'list':
       sectionList.classList.remove('hidden');
       sectionForm.classList.add('hidden');
@@ -37,7 +37,7 @@ function displaySection(section) {
       break;
   }
 }
-
+*/
 function setDate() {
   const today = new Date();
   return today.toDateString();
