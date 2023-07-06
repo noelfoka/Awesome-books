@@ -1,6 +1,8 @@
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-use-before-define */
-// eslint-disable-next-line no-unused-vars
+function setDate() {
+  const today = new Date();
+  return today.toDateString();
+}
+
 function displaySection(section) {
   const sectionList = document.getElementById('list');
   const sectionForm = document.getElementById('form');
@@ -8,8 +10,6 @@ function displaySection(section) {
   const heading = document.getElementById('title');
   const date = document.getElementById('date');
   date.textContent = setDate();
-
-  // console.log(sectionList, sectionForm, sectionContact);
 
   switch (section) {
     case 'list':
@@ -38,7 +38,4 @@ function displaySection(section) {
   }
 }
 
-function setDate() {
-  const today = new Date();
-  return today.toDateString();
-}
+displaySection();
