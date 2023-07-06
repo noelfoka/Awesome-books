@@ -5,12 +5,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
 ul {
   margin: 0;
   padding: 0;
 }
-
 li {
   list-style: none;
   padding-top: 1px;
@@ -20,18 +18,15 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-
 .form,
 .contact {
   display: block;
 }
-
 a {
   color: inherit;
   text-decoration: none;
   width: 100px;
 }
-
 .header,
 .footer {
   border: 3px solid #000;
@@ -41,40 +36,32 @@ a {
   align-items: center;
   padding: 20px;
 }
-
 #date {
   text-align: right;
   margin-right: 5px;
 }
-
 .header-title {
   margin: 0;
 }
-
 .nav-list {
   display: flex;
   gap: 15px;
 }
-
 .footer h3 {
   margin: 0;
 }
-
 .contact {
   margin: 0 auto 20px auto;
 }
-
 @media screen and (min-width: 786px) {
   .contact {
     width: 40%;
   }
 }
-
 .header1 {
   font-size: 36px;
   text-align: center;
 }
-
 .input-form {
   display: flex;
   flex-direction: column;
@@ -82,11 +69,9 @@ a {
   margin: 0 auto;
   gap: 10px;
 }
-
 .input-form button {
   align-self: flex-end;
 }
-
 @media screen and (min-width: 786px) {
   .input-form {
     width: 40%;
@@ -96,59 +81,49 @@ a {
     min-width: 10%;
   }
 }
-
 .list {
   border: 3px solid #000;
   border-radius: 8px;
   margin: 0 auto 20px auto;
 }
-
 @media screen and (min-width: 786px) {
   .list {
     width: 40%;
   }
 }
-
 .book-content {
   display: flex;
   font-size: 14px;
 }
-
 #book-list {
   padding-left: 0;
   border-radius: 3px;
   width: 100%;
 }
-
 #form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 #form.p {
   margin-left: 10px;
 }
-
 .form-h2 {
   display: flex;
   justify-content: center;
   margin-top: 15px;
   font-size: 18px;
 }
-
 .remove-button {
   border: 3px solid black;
   border-radius: 3px;
   margin-right: 10px;
 }
-
 .spandiv {
   display: flex;
   justify-content: center;
 }
-
 .form-line {
   display: flex;
   align-content: center;
@@ -157,7 +132,6 @@ a {
   margin-bottom: 10px;
   width: 70px;
 }
-
 .input.form {
   border: 2px solid black;
   border-radius: 10px;
@@ -166,13 +140,11 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .btn {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-
 .input.btn {
   border: 2px solid black;
   border-radius: 8px;
@@ -182,20 +154,16 @@ a {
   padding-bottom: 8px;
   margin-bottom: 15px;
 }
-
 .background1 {
   background-color: #E0DCDC;
   align-self: center;
 }
-
 .background2 {
   background-color: white;
 }
-
 .hidden {
   display: none !important;
 }
-
 #list {
   width: 50%;
 }
